@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% for sect in site.section %}
+<section>
+    <div class="section-title">
+        {{ sect[0] }}
+    </div>
+    <div class="section-content">
+        {{ sect[1] | markdownify }}
+    </div>
+</section>
+{% endfor %}

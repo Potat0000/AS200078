@@ -1,0 +1,35 @@
+<header>
+    <div class="title-wrapper">
+        <div id="title" class="title">
+            {{ site.title }}
+        </div>
+        <div id="subtitle" class="sub-title">
+            {{ site.subtitle }}
+        </div>
+    </div>
+    <div id="info" class="info">
+        <div id="basic" class="info-block">
+            {% for item in site.info %}
+            <div class="info-item">
+                {% if item.link %}
+                <a href="{{ item.link }}">
+                {% endif %}
+                <i class="fa {{ item.icon }} aria-hidden=" true></i>
+                {{ item.text }}
+                {% if item.link %}
+                </a>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <div id="link" class="info-block">
+            {% for item in site.link %}
+            <div class="info-item">
+                <a href="{{ item[1] }}">
+                <i class="fa fa-globe" aria-hidden="true"></i> {{ item[0] }}
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</header>
