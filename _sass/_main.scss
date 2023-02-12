@@ -40,6 +40,13 @@ code {
   padding-right: 3rem;
 }
 
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: -.125em;
+}
+
 @media screen and (max-width: 54rem) {
   html {
     font-size: 14px;

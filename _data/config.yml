@@ -1,0 +1,51 @@
+site_title: "AS200078 | Potat0 Network"
+title: "Potat0 Network"
+subtitle: "A Research&#8209;Based Network Operated By&nbspPotat0"
+SSOdescription: "Potat0 Network, A Research-Based Network"
+SSOkeywords: "AS200078 Potat0 Network"
+icon:
+  ethernet: "M496 192h-48v-48c0-8.8-7.2-16-16-16h-48V80c0-8.8-7.2-16-16-16H144c-8.8 0-16 7.2-16 16v48H80c-8.8 0-16 7.2-16 16v48H16c-8.8 0-16 7.2-16 16v224c0 8.8 7.2 16 16 16h80V320h32v128h64V320h32v128h64V320h32v128h64V320h32v128h80c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16z"
+  envelope: "M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+info:
+  - icon: ethernet
+    text: AS200078
+  - icon: envelope
+    text: noc@potat0.cc
+    # link: "mailto:noc@potat0.cc"
+  - icon: envelope
+    text: abuse@potat0.cc
+    # link: "mailto:abuse@potat0.cc"
+link:
+  - name: PeeringDB
+    url: https://www.peeringdb.com/asn/200078
+  - name: bgp.tools
+    url: https://bgp.tools/as/200078
+  - name: HE
+    url: https://bgp.he.net/AS200078
+section:
+  Introduce: |
+    Potat0 Network (AS200078) is an education & research network operated by Potat0. This network only supports IPv6.
+
+  Peering: |
+    I have an open peering policy.
+
+    I peer with route servers at Internet eXchange Points and send identical routes with general peerings. Besides, setting up a private peering session with me through Internet eXchanges that we have in common, or establishing the session via a tunnel (WireGuard, GRE, etc.), is always welcome.
+
+    For your convenience, here is some information about peering.
+
+    - ASN: `200078`
+    - AS-SET: `AS200078:AS-SET`
+    - Suggested prefix limit for IPv4: `0`
+    - Suggested prefix limit for IPv6: `10`
+
+  IX: |
+    I haven't joined any IX yet. The information will be updated once I have joined.
+
+  Locations<br>Upstreams: |
+    - New York, USA
+
+      BuyVM (AS53667)
+
+    - Sandefjord, Norway
+
+      Terrahost (AS56655)

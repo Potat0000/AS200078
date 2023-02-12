@@ -1,45 +1,7 @@
-site_title: "AS200078 | Potat0 Network"
-title: "Potat0 Network"
-subtitle: "A Research&#8209;Based Network Operated By&nbspPotat0"
-SSOdescription: "Potat0 Network, A Research-Based Network"
-SSOkeywords: "AS200078 Potat0 Network"
-info:
-  - icon: fa-ethernet
-    text: AS200078
-  - icon: fa-envelope
-    text: noc@potat0.cc
-    # link: "mailto:noc@potat0.cc"
-  - icon: fa-envelope
-    text: abuse@potat0.cc
-    # link: "mailto:abuse@potat0.cc"
-link:
-  PeeringDB: https://www.peeringdb.com/asn/200078
-  bgp.tools: https://bgp.tools/as/200078
-  HE: https://bgp.he.net/AS200078
-section:
-  Introduce: |
-    Potat0 Network (AS200078) is an education & research network operated by Potat0. This network only supports IPv6.
-
-  Peering: |
-    I have an open peering policy.
-
-    I peer with route servers at Internet eXchange Points and send identical routes with general peerings. Besides, setting up a private peering session with me through Internet eXchanges that we have in common, or establishing the session via a tunnel (WireGuard, GRE, etc.), is always welcome.
-
-    For your convenience, here is some information about peering.
-
-    - ASN: `200078`
-    - AS-SET: `AS200078:AS-SET`
-    - Suggested prefix limit for IPv4: `0`
-    - Suggested prefix limit for IPv6: `10`
-
-  IX: |
-    I haven't joined any IX yet. The information will be updated once I have joined.
-
-  Locations<br>Upstreams: |
-    - New York, USA
-
-      BuyVM (AS53667)
-
-    - Sandefjord, Norway
-
-      Terrahost (AS56655)
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: [html, head, body]
+sass:
+  style: compressed
