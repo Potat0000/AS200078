@@ -1,4 +1,4 @@
 ---
-layout: detail
+layout: default
 permalink: /index.html
 ---
