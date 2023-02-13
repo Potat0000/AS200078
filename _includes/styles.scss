@@ -1,6 +1,10 @@
-$main-color:       #4C566A;
+$main-color:       #434C5E;
 $secondary-color:  #81A1C1;
 $background-color: #ECEFF4;
+
+::selection {
+    background:#D8DEE9;
+}
 
 @import "main";
 @import "header";

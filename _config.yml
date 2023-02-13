@@ -5,6 +5,8 @@ compress_html:
   startings: [html, head, body]
 sass:
   style: compressed
+include:
+  - _headers
 exclude:
   - README.md
   - LICENSE
