@@ -1,0 +1,32 @@
+<div class="title-wrapper">
+    <div id="title" class="title">
+        {{ site.data.config.title }}
+    </div>
+    <div id="subtitle" class="sub-title">
+        {{ site.data.config.subtitle }}
+    </div>
+</div>
+<div id="info" class="info">
+    <div id="basic" class="info-block">
+        {% for item in site.data.config.info %}
+        <div class="info-item">
+            {% if item.url %}
+            <a href="{{ item.url }}">
+            {% endif %}
+            <div class="icon icon-{{ item.icon }}"></div> {{ item.text }}
+            {% if item.url %}
+            </a>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <div id="link" class="info-block">
+        {% for item in site.data.config.link %}
+        <div class="info-item">
+            <a href="{{ item.url }}">
+                <div class="icon icon-{{ item.icon }}"></div> {{ item.text }}
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

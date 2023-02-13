@@ -45,6 +45,13 @@ code {
   height: 1em;
   width: 1em;
   vertical-align: -.125em;
+  margin-right: 4px;
+}
+
+.link {
+  height: 0.6em;
+  width: 0.6em;
+  vertical-align: text-top
 }
 
 @media screen and (max-width: 54rem) {
