@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 gem "jekyll"
-gem "jekyll-sass-converter", "~> 1"
 gem "kramdown-parser-gfm"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

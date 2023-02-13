@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Build
+        run: bundle exec jekyll build
+      - name: Patch
+        run: |
+          cd _site
+          hash=$(sha1sum favicon.svg)
+          mv favicon.svg favicon.${hash: :8}.svg
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: b8e8d14919db944281dc12a849ed0c69
+          projectName: as200078
+          directory: _site
+          gitHubToken: ${{ secrets.GH_TOKEN }}
