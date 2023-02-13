@@ -5,3 +5,7 @@ compress_html:
   startings: [html, head, body]
 sass:
   style: compressed
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile*
