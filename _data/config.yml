@@ -36,17 +36,19 @@ section:
     - ASN: `200078`
     - AS-SET: `AS200078:AS-SET`
     - Suggested prefix limit for IPv4: `0`
-    - Suggested prefix limit for IPv6: `10`
+    - Suggested prefix limit for IPv6: `30`
 
   IX: |
     - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
 
   PoP: |
+    - Hangzhou, China
     - Las Vegas, USA
-
+    - Seattle, USA
     - Sandefjord, Norway
+    - Falkenstein, Germany
 
   Upstreams: |
     - BuyVM (AS53667)
-
     - Terrahost (AS56655)
+    - MoeQing Network (AS138211)
