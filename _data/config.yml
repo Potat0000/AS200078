@@ -39,11 +39,14 @@ section:
     - Suggested prefix limit for IPv6: `30`
 
   IX: |
+    - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
     - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
 
   PoP: |
     - Hangzhou, China
+    - Shenyang, China
     - Las Vegas, USA
+    - Tokyo, Japan
     - Seattle, USA
     - Sandefjord, Norway
     - Falkenstein, Germany
