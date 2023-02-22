@@ -40,19 +40,36 @@ section:
 
   IX: |
     - [ZXIX Hangzhou](https://www.peeringdb.com/ix/3166)
+
     - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
+
     - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
 
   PoP: |
-    - Hangzhou, China
-    - Shenyang, China
-    - Las Vegas, USA
-    - Tokyo, Japan
-    - Seattle, USA
-    - Sandefjord, Norway
-    - Falkenstein, Germany
+    - `CN1`<br>
+      Hangzhou, Zhejiang Province, China
+
+    - `CN2`<br>
+      Shenyang, Liaoning Province, China
+
+    - `US1`<br>
+      Las Vegas, Nevada, USA
+
+    - `JP1`<br>
+      Tokyo, Japan
+
+    - `NO1`<br>
+      Sandefjord, Vestfold og Telemark, Norway
+
+    - `US2`<br>
+      Seattle, Washington, USA
+
+    - `DE1`<br>
+      Falkenstein, Saxony-Anhalt, Germany
 
   Upstreams: |
     - BuyVM (AS53667)
+
     - Terrahost (AS56655)
+
     - MoeQing Network (AS138211)
