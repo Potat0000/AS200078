@@ -39,6 +39,7 @@ section:
     - Suggested prefix limit for IPv6: `30`
 
   IX: |
+    - [ZXIX Hangzhou](https://www.peeringdb.com/ix/3166)
     - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
     - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
 
