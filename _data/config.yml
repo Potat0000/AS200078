@@ -23,53 +23,123 @@ link:
   - text: HE
     url: https://bgp.he.net/AS200078
 section:
-  Introduce: |
-    Potat0 Network (AS200078) is an education & research network operated by Potat0. This network only supports IPv6.
+  - title: Introduce
+    content: |
+      Potat0 Network (AS200078) is an education & research network operated by Potat0. This network only supports IPv6.
 
-  Peering: |
-    I have an open peering policy.
+  - title: Peering
+    content: |
+      I have an open peering policy.
 
-    I peer with route servers at Internet eXchange Points and send identical routes with general peerings. Besides, setting up a private peering session with me through Internet eXchanges that we have in common, or establishing the session via a tunnel (WireGuard, GRE, etc.), is always welcome.
+      I peer with route servers at Internet eXchange Points and send identical routes with general peerings. Besides, setting up a private peering session with me through Internet eXchanges that we have in common, or establishing the session via a tunnel (WireGuard, GRE, etc.), is always welcome.
 
-    For your convenience, here is some information about peering.
+      For your convenience, here is some information about peering.
 
-    - ASN: `200078`
-    - AS-SET: `AS200078:AS-SET`
-    - Suggested prefix limit for IPv4: `0`
-    - Suggested prefix limit for IPv6: `30`
+      - ASN: `200078`
+      - AS-SET: `AS200078:AS-SET`
+      - Suggested prefix limit for IPv4: `0`
+      - Suggested prefix limit for IPv6: `30`
 
-  IX: |
-    - [ZXIX Hangzhou](https://www.peeringdb.com/ix/3166)
+  - title: IX
+    content:  |
+      - [ZXIX Hangzhou](https://www.peeringdb.com/ix/3166)
 
-    - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
+      - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
 
-    - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
+      - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
 
-  PoP: |
-    - `CN1`<br>
-      Hangzhou, Zhejiang Province, China
+      - MoeIX CGO
 
-    - `CN2`<br>
-      Shenyang, Liaoning Province, China
+  - title: PoP
+    content:  |
+      - `CN1`<br>
+        Hangzhou, Zhejiang Province, China
 
-    - `US1`<br>
-      Las Vegas, Nevada, USA
+      - `CN2`<br>
+        Shenyang, Liaoning Province, China
 
-    - `JP1`<br>
-      Tokyo, Japan
+      - `US1`<br>
+        Las Vegas, Nevada, USA
 
-    - `NO1`<br>
-      Sandefjord, Vestfold og Telemark, Norway
+      - `JP1`<br>
+        Tokyo, Japan
 
-    - `US2`<br>
-      Seattle, Washington, USA
+      - `NO1`<br>
+        Sandefjord, Vestfold og Telemark, Norway
 
-    - `DE1`<br>
-      Falkenstein, Saxony-Anhalt, Germany
+      - `US2`<br>
+        Seattle, Washington, USA
 
-  Upstreams: |
-    - BuyVM (AS53667)
+      - `DE1`<br>
+        Falkenstein, Saxony-Anhalt, Germany
 
-    - Terrahost (AS56655)
+      - `CN3`<br>
+        Zhengzhou, Henan Province, China
+    map:
+      - latitude: 30.25
+        longitude: 120.1675
+        content: |
+          `CN1`
 
-    - MoeQing Network (AS138211)
+          Hangzhou, Zhejiang Province, China
+
+          ZXIX Hangzhou
+      - latitude: 41.8039
+        longitude: 123.4258
+        content: |
+          `CN2`
+
+          Shenyang, Liaoning Province, China
+      - latitude: 36.2333
+        longitude: -115.2654
+        content: |
+          `US1`
+
+          Las Vegas, Nevada, USA
+
+          BuyVM
+      - latitude: 35.6897
+        longitude: 139.6922
+        content: |
+          `JP1`
+
+          Tokyo, Japan
+
+          AWS Lightsail
+      - latitude: 59.1288
+        longitude: 10.2197
+        content: |
+          `NO1`
+
+          Sandefjord, Vestfold og Telemark, Norway
+
+          Terrahost
+      - latitude: 47.6211
+        longitude: -122.3244
+        content: |
+          `US2`
+
+          Seattle, Washington, USA
+
+          MoeIX SEA
+      - latitude: 51.7333
+        longitude: 11.3333
+        content: |
+          `DE1`
+
+          Falkenstein, Saxony-Anhalt, Germany
+      - latitude: 34.7492
+        longitude: 113.6605
+        content: |
+          `CN3`
+
+          Zhengzhou, Henan Province, China
+
+          MoeIX CGO
+  - title: Upstreams
+    content:  |
+      - BuyVM (AS53667)
+
+      - Terrahost (AS56655)
+
+      - MoeQing Network (AS138211)

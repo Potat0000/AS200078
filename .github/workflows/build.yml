@@ -14,7 +14,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: "3.1"
           bundler-cache: true
       - name: Build
         run: bundle exec jekyll build
@@ -23,6 +23,10 @@ jobs:
           cd _site
           hash=$(sha1sum favicon.svg)
           mv favicon.svg favicon.${hash: :8}.svg
+      - name: Brotli
+        uses: charlesworth/compress-action@1.0.0
+        with:
+          target-directory: _site
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
