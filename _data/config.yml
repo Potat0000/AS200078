@@ -41,17 +41,15 @@ section:
       - Suggested prefix limit for IPv6: `30`
 
   - title: IX
-    content:  |
+    content: |
       - [ZXIX Hangzhou](https://www.peeringdb.com/ix/3166)
 
       - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
 
       - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
 
-      - MoeIX CGO
-
   - title: PoP
-    content:  |
+    content: |
       - `CN1`<br>
         Hangzhou, Zhejiang Province, China
 
@@ -75,6 +73,9 @@ section:
 
       - `CN3`<br>
         Zhengzhou, Henan Province, China
+
+      - `CN4`<br>
+        Xi'an, Shaanxi Province, China
     map:
       - latitude: 30.25
         longitude: 120.1675
@@ -134,10 +135,14 @@ section:
           `CN3`
 
           Zhengzhou, Henan Province, China
+      - latitude: 34.2667
+        longitude: 108.9
+        content: |
+          `CN4`
 
-          MoeIX CGO
+          Xi'an, Shaanxi Province, China
   - title: Upstreams
-    content:  |
+    content: |
       - BuyVM (AS53667)
 
       - Terrahost (AS56655)
