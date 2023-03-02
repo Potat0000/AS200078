@@ -59,9 +59,6 @@ section:
       - `NO1`<br>
         Sandefjord, Vestfold og Telemark, Norway
 
-      - `DE1`<br>
-        Falkenstein, Saxony-Anhalt, Germany
-
       - `JP1`<br>
         Tokyo, Japan
 
@@ -101,12 +98,6 @@ section:
           Sandefjord, Vestfold og Telemark, Norway
 
           Terrahost
-      - latitude: 51.7333
-        longitude: 11.3333
-        content: |
-          # DE1
-
-          Falkenstein, Saxony-Anhalt, Germany
       - latitude: 35.6897
         longitude: 139.6922
         content: |
