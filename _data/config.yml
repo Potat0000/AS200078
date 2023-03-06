@@ -61,18 +61,6 @@ section:
 
       - `JP1`<br>
         Tokyo, Japan
-
-      - `CN1`<br>
-        Hangzhou, Zhejiang Province, China
-
-      - `CN2`<br>
-        Shenyang, Liaoning Province, China
-
-      - `CN3`<br>
-        Zhengzhou, Henan Province, China
-
-      - `CN4`<br>
-        Xi'an, Shaanxi Province, China
     map:
       - latitude: 36.2333
         longitude: -115.2654
@@ -106,32 +94,6 @@ section:
           Tokyo, Japan
 
           AWS Lightsail
-      - latitude: 30.25
-        longitude: 120.1675
-        content: |
-          # CN1
-
-          Hangzhou, Zhejiang Province, China
-
-          ZXIX Hangzhou
-      - latitude: 41.8039
-        longitude: 123.4258
-        content: |
-          # CN2
-
-          Shenyang, Liaoning Province, China
-      - latitude: 34.7492
-        longitude: 113.6605
-        content: |
-          # CN3
-
-          Zhengzhou, Henan Province, China
-      - latitude: 34.2667
-        longitude: 108.9
-        content: |
-          # CN4
-
-          Xi'an, Shaanxi Province, China
   - title: Upstreams
     content: |
       - BuyVM (AS53667)
