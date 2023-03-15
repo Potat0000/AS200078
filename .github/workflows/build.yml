@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -35,4 +38,4 @@ jobs:
           accountId: b8e8d14919db944281dc12a849ed0c69
           projectName: as200078
           directory: _site
-          gitHubToken: ${{ secrets.GH_TOKEN }}
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
