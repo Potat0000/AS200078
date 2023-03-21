@@ -51,6 +51,11 @@ layout: none
         }
     </script>
 
+    {% if site.data.config.CloudflareToken %}
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "{{ site.data.config.CloudflareToken }}"}'></script>
+    {% endif %}
+
 </body>
 
 </html>
