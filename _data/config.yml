@@ -50,6 +50,8 @@ section:
 
       - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
 
+      - ZeroIX Amsterdam
+
       - [BGP.Exchange - Frankfurt](https://www.peeringdb.com/ix/3829)
 
       - [BGP.Exchange - Fremont](https://www.peeringdb.com/ix/3828)
@@ -58,46 +60,64 @@ section:
 
   - title: PoP
     content: |
-      - `US1`<br>
+      - `LAS (US1)`<br>
         Las Vegas, Nevada, USA
 
-      - `US2`<br>
+      - `SEA (US2)`<br>
         Seattle, Washington, USA
 
-      - `NO1`<br>
+      - `TRF (NO1)`<br>
         Sandefjord, Vestfold og Telemark, Norway
 
-      - `JP1`<br>
+      - `FSN (DE1)`<br>
+        Falkenstein, Saxony-Anhalt, Germany
+
+      - `AMS (NL1)`<br>
+        Amsterdam, North Holland, Netherlands
+
+      - `TYO (JP1)`<br>
         Tokyo, Japan
     map:
-      - latitude: 36.2333
-        longitude: -115.2654
+      - latitude: 36.175
+        longitude: -115.136389
         content: |
-          # US1
+          # LAS (US1)
 
           Las Vegas, Nevada, USA
 
           BuyVM
-      - latitude: 47.6211
-        longitude: -122.3244
+      - latitude: 47.609722
+        longitude: -122.333056
         content: |
-          # US2
+          # SEA (US2)
 
           Seattle, Washington, USA
 
           MoeIX SEA
-      - latitude: 59.1288
-        longitude: 10.2197
+      - latitude: 59.130556
+        longitude: 10.216667
         content: |
-          # NO1
+          # TRF (NO1)
 
           Sandefjord, Vestfold og Telemark, Norway
 
           Terrahost
-      - latitude: 35.6897
-        longitude: 139.6922
+      - latitude: 51.733333
+        longitude: 11.333333
         content: |
-          # JP1
+          # FSN (DE1)
+
+          Falkenstein, Saxony-Anhalt, Germany
+      - latitude: 52.372778
+        longitude: 4.893611
+        content: |
+          # AMS (NL1)
+
+          Amsterdam, North Holland, Netherlands
+      - latitude: 35.689722
+        longitude: 139.692222
+        content: |
+          # TYO (JP1)
 
           Tokyo, Japan
 
@@ -108,4 +128,6 @@ section:
 
       - Terrahost (AS56655)
 
-      - MoeQing Network, LLC (AS200105)
+      - MoeQing Network, LLC (AS200105, AS210979)
+
+      - TOHU Public Internet (AS140731)
