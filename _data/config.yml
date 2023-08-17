@@ -77,6 +77,9 @@ section:
       - `AMS (NL1)`<br>
         Amsterdam, North Holland, Netherlands
 
+      - `SGP (SG1)`<br>
+        Singapore
+
       - `TYO (JP1)`<br>
         Tokyo, Japan
     map:
@@ -116,6 +119,14 @@ section:
           # AMS (NL1)
 
           Amsterdam, North Holland, Netherlands
+      - latitude: 1.283333
+        longitude: 103.833333
+        content: |
+          # SGP (SG1)
+
+          Singapore
+
+          AWS Lightsail
       - latitude: 35.689722
         longitude: 139.692222
         content: |
