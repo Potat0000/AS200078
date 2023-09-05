@@ -79,9 +79,6 @@ section:
 
       - `SGP (SG1)`<br>
         Singapore
-
-      - `TYO (JP1)`<br>
-        Tokyo, Japan
     map:
       - latitude: 36.175
         longitude: -115.136389
@@ -127,20 +124,12 @@ section:
           Singapore
 
           AWS Lightsail
-      - latitude: 35.689722
-        longitude: 139.692222
-        content: |
-          # TYO (JP1)
-
-          Tokyo, Japan
-
-          AWS Lightsail
   - title: Upstreams
     content: |
       - BuyVM (AS53667)
 
       - Terrahost (AS56655)
 
-      - MoeQing Network, LLC (AS200105, AS210979)
+      - MoeQing Network, LLC (AS200105)
 
       - TOHU Public Internet (AS140731)
