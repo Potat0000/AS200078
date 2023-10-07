@@ -54,12 +54,6 @@ section:
 
       - [BEE-IX](https://www.peeringdb.com/ix/4105)
 
-      - [BGP.Exchange - Frankfurt](https://www.peeringdb.com/ix/3829)
-
-      - [BGP.Exchange - Fremont](https://www.peeringdb.com/ix/3828)
-
-      - [BGP.Exchange - Seattle](https://www.peeringdb.com/ix/3847)
-
   - title: PoP
     content: |
       - `LAS (US1)`<br>
@@ -77,8 +71,8 @@ section:
       - `AMS (NL1)`<br>
         Amsterdam, North Holland, Netherlands
 
-      - `SGP (SG1)`<br>
-        Singapore
+      - `HKG (HK1)`<br>
+        Hong Kong
     map:
       - latitude: 36.175
         longitude: -115.136389
@@ -88,14 +82,14 @@ section:
           Las Vegas, Nevada, USA
 
           BuyVM
-      - latitude: 47.609722
-        longitude: -122.333056
+      - latitude: 22.302711
+        longitude: 114.177216
         content: |
-          # SEA (US2)
+          # HKG (HK1)
 
-          Seattle, Washington, USA
+          Hong Kong
 
-          MoeIX SEA
+          DogYun
       - latitude: 59.130556
         longitude: 10.216667
         content: |
@@ -104,6 +98,14 @@ section:
           Sandefjord, Vestfold og Telemark, Norway
 
           Terrahost
+      - latitude: 47.609722
+        longitude: -122.333056
+        content: |
+          # SEA (US2)
+
+          Seattle, Washington, USA
+
+          MoeIX SEA
       - latitude: 51.733333
         longitude: 11.333333
         content: |
@@ -116,14 +118,6 @@ section:
           # AMS (NL1)
 
           Amsterdam, North Holland, Netherlands
-      - latitude: 1.283333
-        longitude: 103.833333
-        content: |
-          # SGP (SG1)
-
-          Singapore
-
-          AWS Lightsail
   - title: Upstreams
     content: |
       - BuyVM (AS53667)
