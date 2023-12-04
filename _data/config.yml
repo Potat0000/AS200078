@@ -48,8 +48,6 @@ section:
 
       - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
 
-      - [MoeIX SEA](https://www.peeringdb.com/ix/4082)
-
       - [ZeroIX Amsterdam](https://www.peeringdb.com/ix/4158)
 
       - [BEE-IX](https://www.peeringdb.com/ix/4105)
@@ -59,20 +57,14 @@ section:
       - `LAS (US1)`<br>
         Las Vegas, Nevada, USA
 
-      - `SEA (US2)`<br>
-        Seattle, Washington, USA
+      - `HKG (HK1)`<br>
+        Hong Kong
 
       - `TRF (NO1)`<br>
         Sandefjord, Vestfold og Telemark, Norway
 
-      - `FSN (DE1)`<br>
-        Falkenstein, Saxony-Anhalt, Germany
-
       - `AMS (NL1)`<br>
         Amsterdam, North Holland, Netherlands
-
-      - `HKG (HK1)`<br>
-        Hong Kong
     map:
       - latitude: 36.175
         longitude: -115.136389
@@ -98,20 +90,6 @@ section:
           Sandefjord, Vestfold og Telemark, Norway
 
           Terrahost
-      - latitude: 47.609722
-        longitude: -122.333056
-        content: |
-          # SEA (US2)
-
-          Seattle, Washington, USA
-
-          MoeIX SEA
-      - latitude: 51.733333
-        longitude: 11.333333
-        content: |
-          # FSN (DE1)
-
-          Falkenstein, Saxony-Anhalt, Germany
       - latitude: 52.372778
         longitude: 4.893611
         content: |
@@ -123,7 +101,5 @@ section:
       - BuyVM (AS53667)
 
       - Terrahost (AS56655)
-
-      - MoeQing Network, LLC (AS200105)
 
       - TOHU Public Internet (AS140731)
