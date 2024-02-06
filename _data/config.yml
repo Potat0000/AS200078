@@ -91,7 +91,7 @@ section:
 
           Hong Kong
 
-          DogYun
+          Skywolf
       - latitude: 59.130556
         longitude: 10.216667
         content: |
@@ -109,6 +109,8 @@ section:
   - title: Upstreams
     content: |
       - BuyVM (AS53667)
+
+      - Skywolf (AS151364)
 
       - Terrahost (AS56655)
 
