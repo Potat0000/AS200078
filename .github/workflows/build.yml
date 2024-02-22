@@ -24,13 +24,15 @@ jobs:
       - name: Patch
         run: |
           cd _site
-          sed -i s,https://unpkg.com/leaflet@1.6.0/dist/,https://unpkg.com/leaflet@1/dist/,g index.html
+          sed -i 's,https://unpkg.com/leaflet@1.6.0/dist/,https://unpkg.com/leaflet@1/dist/,g' index.html
           hash=$(sha1sum favicon.svg)
           mv favicon.svg favicon.${hash: :8}.svg
-      - name: Brotli
-        uses: charlesworth/compress-action@1.0.0
+      - name: Minify
+        uses: docker://devatherock/minify-js:3.0.0
         with:
-          target-directory: _site
+          directory: _site
+          add_suffix: false
+          inclusions: index.html
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
