@@ -48,7 +48,7 @@ section:
 
       - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
 
-      - [ZeroIX Amsterdam](https://www.peeringdb.com/ix/4158)
+      - [ZeroIX San Jose](https://www.peeringdb.com/ix/4242)
 
       - [BEE-IX](https://www.peeringdb.com/ix/4105)
 
@@ -59,8 +59,6 @@ section:
       - BGP.Exchange Taipei
 
       - [BGP.Exchange Oslo](https://www.peeringdb.com/ix/3833)
-
-      - [BGP.Exchange Amsterdam](https://www.peeringdb.com/ix/3822)
 
   - title: PoP
     content: |
@@ -73,8 +71,8 @@ section:
       - `TRF (NO1)`<br>
         Sandefjord, Vestfold og Telemark, Norway
 
-      - `AMS (NL1)`<br>
-        Amsterdam, North Holland, Netherlands
+      - `SJC`<br>
+        San Jose, California, USA
     map:
       - latitude: 36.175
         longitude: -115.136389
@@ -100,12 +98,12 @@ section:
           Sandefjord, Vestfold og Telemark, Norway
 
           Terrahost
-      - latitude: 52.372778
-        longitude: 4.893611
+      - latitude: 37.336111
+        longitude: -121.890556
         content: |
-          # AMS (NL1)
+          # SJC
 
-          Amsterdam, North Holland, Netherlands
+          San Jose, California, USA
   - title: Upstreams
     content: |
       - BuyVM (AS53667)
@@ -113,5 +111,7 @@ section:
       - Skywolf (AS151364)
 
       - Terrahost (AS56655)
+
+      - MoeDove (AS44324)
 
       - TOHU Public Internet (AS140731)
