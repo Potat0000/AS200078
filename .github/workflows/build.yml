@@ -21,10 +21,9 @@ jobs:
           bundler-cache: true
       - name: Build
         run: bundle exec jekyll build
-      - name: Patch
+      - name: Rename favicon
         run: |
           cd _site
-          sed -i 's,https://unpkg.com/leaflet@1.6.0/dist/,https://unpkg.com/leaflet@1/dist/,g' index.html
           hash=$(sha1sum favicon.svg)
           mv favicon.svg favicon.${hash: :8}.svg
       - name: Minify

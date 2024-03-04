@@ -73,37 +73,6 @@ section:
 
       - `SJC`<br>
         San Jose, California, USA
-    map:
-      - latitude: 36.175
-        longitude: -115.136389
-        content: |
-          # LAS (US1)
-
-          Las Vegas, Nevada, USA
-
-          BuyVM
-      - latitude: 22.302711
-        longitude: 114.177216
-        content: |
-          # HKG (HK1)
-
-          Hong Kong
-
-          Skywolf
-      - latitude: 59.130556
-        longitude: 10.216667
-        content: |
-          # TRF (NO1)
-
-          Sandefjord, Vestfold og Telemark, Norway
-
-          Terrahost
-      - latitude: 37.336111
-        longitude: -121.890556
-        content: |
-          # SJC
-
-          San Jose, California, USA
   - title: Upstreams
     content: |
       - BuyVM (AS53667)

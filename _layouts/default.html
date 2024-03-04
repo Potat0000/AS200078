@@ -22,18 +22,6 @@ layout: none
                 </div>
                 <div class="section-content">
                     {{ sect.content | markdownify }}
-                    {% if sect.map %}
-                    {% leaflet_map {"center": [30, 15]} %}
-                    {% for point in sect.map %}
-                    {% assign point_content = point.content | markdownify | strip_newlines | replace: '"', '\"' %}
-                    {% leaflet_marker {
-                    "latitude" : {{ point.latitude }},
-                    "longitude" : {{ point.longitude }},
-                    "popupContent" : "{{ point_content }}"
-                    } %}
-                    {% endfor %}
-                    {% endleaflet_map %}
-                    {% endif %}
                 </div>
             </section>
             {% endfor %}
