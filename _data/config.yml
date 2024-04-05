@@ -54,11 +54,13 @@ section:
 
       - [4IXP](https://www.peeringdb.com/ix/2447)
 
-      - [BGP.Exchange Toronto](https://www.peeringdb.com/ix/3836)
+      - BGP.Exchange Santa Clara
 
-      - BGP.Exchange Taipei
+      - [BGP.Exchange Singapore](https://www.peeringdb.com/ix/3820)
 
-      - [BGP.Exchange Oslo](https://www.peeringdb.com/ix/3833)
+      - [BGP.Exchange Amsterdam](https://www.peeringdb.com/ix/3822)
+
+      - [BGP.Exchange Fremont](https://www.peeringdb.com/ix/3828)
 
   - title: PoP
     content: |
@@ -82,5 +84,3 @@ section:
       - Terrahost (AS56655)
 
       - MoeDove (AS44324)
-
-      - TOHU Public Internet (AS140731)
