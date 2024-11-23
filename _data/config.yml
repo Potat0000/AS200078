@@ -68,8 +68,9 @@ section:
       - `HKG`<br>
         Hong Kong SAR, China
 
-      - `TRF`<br>
-        Sandefjord, Vestfold og Telemark, Norway
+      - `FRA`<br>
+        FRA
+        Frankfurt, Germany
 
       - `SJC`<br>
         San Jose, California, USA
@@ -81,5 +82,3 @@ section:
       - Skywolf (AS7720)
 
       - MoeDove (AS44324)
-
-      - Terrahost (AS56655)
