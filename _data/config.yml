@@ -44,9 +44,11 @@ section:
 
   - title: IX
     content: |
-      - [BGP.Exchange Amsterdam](https://www.peeringdb.com/ix/3822)
+      - [LOCIX FRANKFURT](https://www.peeringdb.com/ix/2084)
 
       - BGP.Exchange Dallas
+
+      - [BGP.Exchange Frankfurt](https://www.peeringdb.com/ix/3828)
 
       - [BGP.Exchange Fremont](https://www.peeringdb.com/ix/3828)
 
@@ -69,7 +71,6 @@ section:
         Hong Kong SAR, China
 
       - `FRA`<br>
-        FRA
         Frankfurt, Germany
 
       - `SJC`<br>
@@ -82,3 +83,5 @@ section:
       - Skywolf (AS7720)
 
       - MoeDove (AS44324)
+
+      - Hurricane Electric (AS6939)
