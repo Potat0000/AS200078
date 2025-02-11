@@ -26,11 +26,11 @@ link:
     url: https://bgp.he.net/AS200078
 section:
   - title: Introduce
-    content: |
+    markdown: |
       Potat0 Network (AS200078) is an education & research network operated by Potat0. This network only supports IPv6.
 
   - title: Peering
-    content: |
+    markdown: |
       I have an open peering policy.
 
       I peer with route servers at Internet eXchange Points and send identical routes with general peerings. Besides, setting up a private peering session with me through Internet eXchanges that we have in common, or establishing the session via a tunnel (WireGuard, GRE, etc.), is always welcome.
@@ -42,28 +42,38 @@ section:
       - Suggested prefix limit for IPv4: `0`
       - Suggested prefix limit for IPv6: `30`
 
+      If you implemented some kind of whitelisting mechanism, here's a list of the prefixes I have
+
+      - `2a0e:aa07:e050::/44`
+      - `2a13:b487:1100::/40`
+      - `2a13:a5c3:f200::/40`
+      - `2406:840:9980::/44`
+
   - title: IX
-    content: |
-      - [LOCIX FRANKFURT](https://www.peeringdb.com/ix/2084)
-
-      - BGP.Exchange Dallas
-
-      - [BGP.Exchange Frankfurt](https://www.peeringdb.com/ix/3828)
-
-      - [BGP.Exchange Fremont](https://www.peeringdb.com/ix/3828)
-
-      - [BGP.Exchange Singapore](https://www.peeringdb.com/ix/3820)
-
-      - [ZeroIX San Jose](https://www.peeringdb.com/ix/4242)
-
-      - [ZXIX Hangzhou](https://www.peeringdb.com/ix/3166)
-
-      - [ZXIX Hong Kong](https://www.peeringdb.com/ix/3246)
-
-      - [4IXP](https://www.peeringdb.com/ix/2447)
+    ix:
+      - name: LOCIX FRANKFURT
+        peeringdb: 2084
+      - name: BGP.Exchange Kansas City
+        peeringdb: 3835
+      - name: BGP.Exchange Hong Kong
+        peeringdb: 3825
+      - name: BGP.Exchange Frankfurt
+        peeringdb: 3829
+      - name: BGP.Exchange Fremont
+        peeringdb: 3828
+      - name: HN Internet Exchange
+        peeringdb: 4379
+      - name: Zero Internet eXchange San Jose
+        peeringdb: 4242
+      - name: ZXIX Hangzhou
+        peeringdb: 3166
+      - name: ZXIX Hong Kong
+        peeringdb: 3246
+      - name: 4b42 Internet Exchange Point
+        peeringdb: 2447
 
   - title: PoP
-    content: |
+    markdown: |
       - `LAS`<br>
         Las Vegas, Nevada, USA
 
@@ -77,11 +87,16 @@ section:
         San Jose, California, USA
 
   - title: Upstreams
-    content: |
-      - BuyVM (AS53667)
-
-      - Skywolf (AS7720)
-
-      - MoeDove (AS44324)
-
-      - Hurricane Electric (AS6939)
+    upstreams:
+      - name: FranTech Solutions | BuyVM
+        asn: 53667
+      - name: Skywolf Technology LLC
+        asn: 7720
+      - name: xTom OU
+        asn: 3204
+      - name: MoeDove LLC
+        asn: 44324
+      - name: Hurricane Electric LLC
+        asn: 6939
+      - name: Hyper Group Network Ltd
+        asn: 216324

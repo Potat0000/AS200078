@@ -21,7 +21,29 @@ layout: none
                     {{ sect.title }}
                 </div>
                 <div class="section-content">
-                    {{ sect.content | markdownify }}
+                    {% if sect.ix %}
+                    <ul>
+                        {% for item in sect.ix %}
+                        <li>
+                            {% if item.peeringdb %}
+                            <p><a href="https://www.peeringdb.com/ix/{{ item.peeringdb }}">{{ item.name }}</a></p>
+                            {% else %}
+                            <p>{{ item.name }}</p>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% elsif sect.upstreams %}
+                    <ul>
+                        {% for item in sect.upstreams %}
+                        <li>
+                            <p><a href="https://bgp.tools/as/{{ item.asn }}">{{ item.name }} (AS{{ item.asn }})</a></p>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% elsif sect.markdown %}
+                    {{ sect.markdown | markdownify }}
+                    {% endif %}
                 </div>
             </section>
             {% endfor %}
