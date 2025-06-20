@@ -19,6 +19,10 @@ jobs:
         with:
           ruby-version: "3.1"
           bundler-cache: true
+      - name: Setup Node.js
+        uses: actions/setup-node@main
+        with:
+          node-version: lts/*
       - name: Build
         run: bundle exec jekyll build
       - name: Rename favicon
@@ -32,11 +36,5 @@ jobs:
           directory: _site
           add_suffix: false
           inclusions: index.html
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: b8e8d14919db944281dc12a849ed0c69
-          projectName: as200078
-          directory: _site
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to EdgeOne Pages
+        run: npx edgeone pages deploy ./_site -n as200078-info -t ${{secrets.EDGEONE_API_TOKEN}}
