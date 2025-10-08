@@ -1,7 +1,5 @@
 sass:
   style: compressed
-include:
-  - _headers
 exclude:
   - README.md
   - LICENSE

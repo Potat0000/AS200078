@@ -19,22 +19,37 @@ jobs:
         with:
           ruby-version: "3.1"
           bundler-cache: true
-      - name: Setup Node.js
-        uses: actions/setup-node@main
+      - name: Setup Python
+        uses: actions/setup-python@main
         with:
-          node-version: lts/*
+          python-version: 3.x
       - name: Build
-        run: bundle exec jekyll build
-      - name: Rename favicon
         run: |
-          cd _site
-          hash=$(sha1sum favicon.svg)
-          mv favicon.svg favicon.${hash: :8}.svg
+          bundle exec jekyll build
+          sed -i -E 's/favicon\.[0-9a-f]{8}\.svg/favicon.svg/g' _site/index.html
       - name: Minify
         uses: docker://devatherock/minify-js:3.0.0
         with:
           directory: _site
           add_suffix: false
           inclusions: index.html
-      - name: Deploy to EdgeOne Pages
-        run: npx edgeone pages deploy ./_site -n as200078-info -t ${{secrets.EDGEONE_API_TOKEN}}
+      - name: Deploy to TencentCloud COS
+        env:
+          SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
+          SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
+          REGION: ap-guangzhou
+          BUCKET: as200078-info-1307988268
+        run: |
+          pip install coscmd
+          coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+          cd _site
+          coscmd upload -rfs --delete ./ /
+      - name: Refresh and Prefetch TencentCloud EdgeOne
+        env:
+          TENCENTCLOUD_SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
+          TENCENTCLOUD_SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
+          TENCENTCLOUD_REGION: ap-guangzhou
+        run: |
+          pip install tccli
+          tccli teo CreatePurgeTask --cli-unfold-argument --ZoneId zone-3d2iwq53tqx6 --Type purge_host --Targets 'net.potat0.cc'
+          tccli teo CreatePrefetchTask --cli-unfold-argument --ZoneId zone-3d2iwq53tqx6 --Targets 'https://net.potat0.cc/index.html' 'https://net.potat0.cc/geofeed.csv' 'https://net.potat0.cc/favicon.svg' 'https://net.potat0.cc/robots.txt' 'https://net.potat0.cc/sitemap.xml'
