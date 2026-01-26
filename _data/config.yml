@@ -53,18 +53,8 @@ section:
     ix:
       - name: LOCIX FRANKFURT
         peeringdb: 2084
-      - name: BGP.Exchange Kansas City
-        peeringdb: 3835
-      - name: BGP.Exchange Hong Kong
-        peeringdb: 3825
-      - name: BGP.Exchange Frankfurt
-        peeringdb: 3829
-      - name: BGP.Exchange Fremont
-        peeringdb: 3828
       - name: HN Internet Exchange
         peeringdb: 4379
-      - name: Zero Internet eXchange San Jose
-        peeringdb: 4242
       - name: ZXIX Hangzhou
         peeringdb: 3166
       - name: ZXIX Hong Kong
@@ -83,8 +73,8 @@ section:
       - `FRA`<br>
         Frankfurt, Germany
 
-      - `SJC`<br>
-        San Jose, California, USA
+      - `SYD`<br>
+        Sydney, New South Wales, Australia
 
   - title: Upstreams
     upstreams:
@@ -96,6 +86,8 @@ section:
         asn: 3204
       - name: MoeDove LLC
         asn: 44324
+      - name: SMC
+        asn: 142064
       - name: Hurricane Electric LLC
         asn: 6939
       - name: Hyper Group Network Ltd
