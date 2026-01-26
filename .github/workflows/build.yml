@@ -37,7 +37,7 @@ jobs:
         env:
           SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
           SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
-          REGION: ap-guangzhou
+          REGION: ap-shanghai
           BUCKET: as200078-info-1307988268
         run: |
           pip install coscmd
@@ -48,8 +48,9 @@ jobs:
         env:
           TENCENTCLOUD_SECRET_ID: ${{ secrets.TENCENTCLOUD_SECRET_ID }}
           TENCENTCLOUD_SECRET_KEY: ${{ secrets.TENCENTCLOUD_SECRET_KEY }}
-          TENCENTCLOUD_REGION: ap-guangzhou
+          TENCENTCLOUD_REGION: ap-shanghai
         run: |
           pip install tccli
           tccli teo CreatePurgeTask --cli-unfold-argument --ZoneId zone-3d2iwq53tqx6 --Type purge_host --Targets 'net.potat0.cc'
           tccli teo CreatePrefetchTask --cli-unfold-argument --ZoneId zone-3d2iwq53tqx6 --Targets 'https://net.potat0.cc/index.html' 'https://net.potat0.cc/geofeed.csv' 'https://net.potat0.cc/favicon.svg' 'https://net.potat0.cc/robots.txt' 'https://net.potat0.cc/sitemap.xml'
+
