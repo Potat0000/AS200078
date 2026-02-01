@@ -44,9 +44,9 @@ section:
 
       If you implemented some kind of whitelisting mechanism, here's a list of the prefixes I have
 
-      - `2a0e:aa07:e050::/44`
       - `2a13:b487:1100::/40`
       - `2a13:a5c3:f200::/40`
+      - `2a0f:1cc5:2900::/40`
       - `2406:840:9980::/44`
 
   - title: IX
@@ -61,6 +61,8 @@ section:
         peeringdb: 3246
       - name: 4b42 Internet Exchange Point
         peeringdb: 2447
+      - name: Protocol 7 IX - Hong Kong
+        peeringdb: 4932
 
   - title: PoP
     markdown: |
@@ -68,10 +70,13 @@ section:
         Las Vegas, Nevada, USA
 
       - `HKG`<br>
-        Hong Kong SAR, China
+        Hong Kong SAR, P.R. China
 
       - `FRA`<br>
         Frankfurt, Germany
+
+      - `TPE`<br>
+        Taipei, Taiwan Province, P.R. China
 
       - `SYD`<br>
         Sydney, New South Wales, Australia
@@ -90,5 +95,3 @@ section:
         asn: 142064
       - name: Hurricane Electric LLC
         asn: 6939
-      - name: Hyper Group Network Ltd
-        asn: 216324
